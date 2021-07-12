@@ -1,6 +1,6 @@
 <template>
   <div class="education">
-    <v-container class="py-8 px-6" fluid>
+    <v-container class="py-8 px-5" fluid>
       <v-row>
         <v-col v-for="card in cards" :key="card" cols="12">
           <v-card>

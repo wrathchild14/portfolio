@@ -27,6 +27,17 @@
           <v-list-item-title>{{ item.title }}</v-list-item-title>
         </v-list-item-content>
       </v-list-item>
+
+      <v-list-item href="https://wrathchild14.github.io/" target="_blank">
+        <v-list-item-icon>
+          <v-icon>mdi-alien</v-icon>
+        </v-list-item-icon>
+
+        <v-list-item-content>
+          <v-list-item-title>Rip & Off</v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
+
     </v-list>
   </v-navigation-drawer>
 </template>
@@ -36,12 +47,13 @@ export default {
   data() {
     return {
       items: [
-        { title: "Education", icon: "mdi-home-city", path: "/education" },
+        { title: "Home", icon: "mdi-home", path: "/" },
+        { title: "Education", icon: "mdi-book-open-variant", path: "/education" },
         { title: "Projects", icon: "mdi-desktop-mac", path: "/projects" },
-        { title: "Game", icon: "mdi-alien", path: "/"},
+        // { title: "Game", icon: "mdi-alien", path: "/game"}, // temp
         { title: "Contact", icon: "mdi-account", path: "/about" },
       ],
-      mini: false,
+      mini: true,
     };
   },
 };
