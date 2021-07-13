@@ -2,36 +2,24 @@
   <div class="education">
     <v-container class="py-8 px-5" fluid>
       <v-row>
-        <v-col v-for="card in cards" :key="card" cols="12">
+        <v-col v-for="card in cards" :key="card.key" cols="12">
           <v-card>
-            <v-subheader>{{ card }}</v-subheader>
+            <v-subheader class="text-h5">{{ card.key }}</v-subheader>
 
             <v-list two-line>
-              <template v-for="n in 6">
-                <v-list-item :key="n">
-                  <v-list-item-avatar color="grey darken-1">
-                  </v-list-item-avatar>
-
-                  <v-list-item-content>
-                    <v-list-item-title>Message {{ n }}</v-list-item-title>
-
-                    <v-list-item-subtitle>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Nihil repellendus distinctio similique
-                    </v-list-item-subtitle>
-                  </v-list-item-content>
+              <template v-for="n in card.subjects">
+                <v-list-item :key="n.key">
+                  <v-list-item-content> - {{ n }} </v-list-item-content>
                 </v-list-item>
-
-                <v-divider
-                  v-if="n !== 6"
-                  :key="`divider-${n}`"
-                  inset
-                ></v-divider>
               </template>
             </v-list>
           </v-card>
         </v-col>
       </v-row>
+
+      <v-btn class="green darken-4 mt-5" dark large to="/projects">
+        To Projects
+      </v-btn>
     </v-container>
   </div>
 </template>
@@ -40,7 +28,27 @@
 export default {
   data() {
     return {
-      cards: ["Highschool", "College", "Personal interests"],
+      cards: [
+        {
+          key: "Highschool: Josif Josifovski",
+          subjects: ["Nothing", "Special"],
+        },
+        {
+          key: "College: Fakulteta za racunalnistvo in informatike",
+          subjects: [
+            "Artificial Intelligence",
+            "Data Mining",
+            "Operating Systems",
+            "Compilers and Virtual Machines",
+            "Algorithms and Data Strucutres 1/2",
+            "Computer Networks and Security",
+          ],
+        },
+        {
+          key: "Personal interests",
+          subjects: ["Vue js", "Vuetify", "Node js"],
+        },
+      ],
     };
   },
 };

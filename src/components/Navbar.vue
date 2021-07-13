@@ -34,7 +34,7 @@
         </v-list-item-icon>
 
         <v-list-item-content>
-          <v-list-item-title>Rip & Off</v-list-item-title>
+          <v-list-item-title>Play Rip & Off</v-list-item-title>
         </v-list-item-content>
       </v-list-item>
 
