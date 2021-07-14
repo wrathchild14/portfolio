@@ -34,7 +34,7 @@ export default {
           subjects: ["Nothing", "Special"],
         },
         {
-          key: "College: Fakulteta za racunalnistvo in informatike",
+          key: "College: Fakulteta za racunalnistvo in informatiko",
           subjects: [
             "Artificial Intelligence",
             "Data Mining",
