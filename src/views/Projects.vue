@@ -3,18 +3,12 @@
     <v-container class="mt-5">
       <v-row>
         <v-col v-for="project in projects" :key="project.title" md="4" xs="12">
-          <!-- <v-card height="200">
-            <p>{{ project.title }}</p>
-          </v-card> -->
-
           <v-card class="mx-auto" width="344">
             <v-img :src="project.img" height="200px"></v-img>
 
             <v-card-title class="green--text">
               {{ project.title }}
             </v-card-title>
-
-            <!-- <v-card-subtitle> 1,000 miles of wonder </v-card-subtitle> -->
 
             <v-card-actions>
               <v-btn text :href="project.link" target="_blank">
@@ -85,6 +79,23 @@ export default {
           show: false,
           link: "https://github.com/wrathchild14/game",
         },
+        {
+          title: "Drug problem in Europe",
+          description:
+            "With a couple of friends we analyzed the data available regarding drugs in Europe, build various prediction models to better understand the problem",
+          img: "https://raw.githubusercontent.com/danilo1214/PR20ddpdjphv/master/ECSTASYLINREG.png",
+          show: false,
+          link: "https://github.com/danilo1214/PR20ddpdjphv",
+        },
+        {
+          title: "This website",
+          description:
+            "Made a challenge for me to learn a new technology and made this webiste with Vuetify js and Vue js",
+          img: "favicon.ico",
+          show: false,
+          link: "https://github.com/wrathchild14/portfolio",
+        },
+
       ],
     };
   },

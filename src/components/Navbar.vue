@@ -51,7 +51,7 @@ export default {
         { title: "Education", icon: "mdi-book-open-variant", path: "/education" },
         { title: "Projects", icon: "mdi-desktop-mac", path: "/projects" },
         // { title: "Game", icon: "mdi-alien", path: "/game"}, // temp
-        { title: "Contact", icon: "mdi-account", path: "/about" },
+        // { title: "Contact", icon: "mdi-account", path: "/about" },
       ],
       mini: true,
     };

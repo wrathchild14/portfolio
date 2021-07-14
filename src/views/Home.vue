@@ -13,35 +13,77 @@
       >
         Jovan Prodanov 2021
       </div>
-      <v-btn class="green darken-4" dark large to="/education">
+      <!-- <v-btn class="green darken-4" dark large to="/education">
         Get Started
-      </v-btn>
+      </v-btn> -->
 
       <v-dialog transition="dialog-top-transition" max-width="600">
         <template v-slot:activator="{ on, attrs }">
-          <v-btn color="green darken-4" class="mt-2" dark large v-bind="attrs" v-on="on">about me</v-btn>
+          <v-btn
+            color="green darken-4"
+            class="mt-2"
+            dark
+            large
+            v-bind="attrs"
+            v-on="on"
+            >about me</v-btn
+          >
         </template>
 
         <template v-slot:default="dialog">
           <v-card>
             <v-card-title class="green darken-4">
               <span class="text-h5 white--text">Jovan Prodanov</span>
+              <v-subheader>Student, 21 years old</v-subheader>
             </v-card-title>
 
             <v-list>
+              <v-list-item>
+                <v-list-item-action>
+                  <v-icon>mdi-github</v-icon>
+                </v-list-item-action>
+
+                <v-list-item-content>
+                  <v-list-item-title>
+                    <a href="https://github.com/wrathchild14" target="_blank">
+                    github.com/wrathchild14
+                    </a>
+                  </v-list-item-title>
+                </v-list-item-content>
+              </v-list-item>
+
+              <v-divider inset></v-divider>
+
               <v-list-item>
                 <v-list-item-action>
                   <v-icon>mdi-email</v-icon>
                 </v-list-item-action>
 
                 <v-list-item-content>
-                  <v-list-item-title
-                    >jovanprodanov123@gmail.com</v-list-item-title
-                  >
+                  <v-list-item-title>
+                    <a href="mailto:jovanprodanov123@gmail.com" target="_blank">
+                      jovanprodanov123@gmail.com
+                    </a>
+                  </v-list-item-title>
                 </v-list-item-content>
               </v-list-item>
 
               <v-divider inset></v-divider>
+
+               <v-list-item>
+                <v-list-item-action>
+                  <v-icon>mdi-linkedin</v-icon>
+                </v-list-item-action>
+
+                <v-list-item-content>
+                  <v-list-item-title>
+                    <a href="https://www.linkedin.com/in/jovan-p-2a33a81b3/" target="_blank">
+                      linkedin
+                    </a>
+                  </v-list-item-title>
+                </v-list-item-content>
+              </v-list-item>
+
 
               <v-list-item>
                 <v-list-item-action>
@@ -71,7 +113,6 @@
           </v-card>
         </template>
       </v-dialog>
-
     </v-layout>
   </v-parallax>
 </template>
